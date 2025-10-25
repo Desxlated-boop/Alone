@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2A44;
+    color: white;
+    margin: 0; 
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 10px 0 0; 
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+nav {
+    padding: 0 0 15px;
+    margin: 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #4A4A4A;
+    margin: 0; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+main {
+    flex: 1 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 20px; 
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text {
+    flex-grow: 1;
+}
+
+.text p {
+    margin: 0 0 10px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resume-btn:hover {
+    background-color: #0056b3;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.content-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.skill-bar {
+    margin: 15px 0;
+}
+
+.skill-bar span {
+    display: block;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #007BFF;
+    text-align: right;
+    color: white;
+    padding-right: 5px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.project-card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.filter {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filter button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter button:hover {
+    background-color: #ddd;
+}
+
+.diary {
+    margin-top: 20px;
+}
+
+.diary h2 {
+    text-align: center;
+}
+
+.progress-list {
+    list-style: none;
+    padding: 0;
+}
+
+.progress-list li {
+    margin: 5px 0;
+}
+
+.progress-list button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.progress-list button:hover {
+    background-color: #0056b3;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.contacts h2 {
+    text-align: center;
+}
+
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts form input,
+.contacts form textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacts form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacts form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #1F2A44;
+    color: white;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        margin-bottom: 10px;
+    }
+}
