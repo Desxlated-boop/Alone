@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Имя Студента - Проекты</title>
+    <title>Проекты</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
 </head>
 <body>
     <header>
@@ -14,25 +15,47 @@
     </header>
     <nav>
         <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-            <li><a href="diary.html">Дневник</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="../index.html">Главная</a></li>
+            <li><img src="../images/icons/projects.ico" alt="Иконка" style="margin-top: -2px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="projects.html">Проекты</a></li>
+            <li><img src="../images/icons/diary.ico" alt="Иконка" style="margin-top: -3px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="diary.html">Дневник</a></li>
+            <li><img src="../images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
     <main>
         <section class="projects">
-            <h2>Мои проекты</h2>
-            <div class="filter"><button>Все</button><button>HTML</button><button>JS</button><button>React</button></div>
+            <h2><img src="../images/icons/projects.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> Лучшие проекты</h2>
+            <div class="filter">
+                <button class="filter-btn" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="html">HTML</button>
+                <button class="filter-btn" data-filter="Babayton">Babayton</button>
+                <button class="filter-btn" data-filter="css">CSS</button>
+            </div>
             <div class="project-grid">
-                <div class="project-card">Сайт - магазин<br>HTML, CSS</div>
-                <div class="project-card">Калькулятор на Qt6<br>JavaScript</div>
-                <div class="project-card">Портфолио (этот сайт)<br>Bootstrap</div>
+                <div class="project-card" data-category="Babayton">
+                    <div class="project-content">
+                        <h3>Калькулятор</h3>
+                        <p>Технологии: Babayton</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="css html">
+                    <div class="project-content">
+                        <h3>Интернет-магазин</h3>
+                        <p>Технологии: HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="css html">
+                    <div class="project-content">
+                        <h3>Сайт - Портфолио</h3>
+                        <p>Технологии: HTML, CSS, JS</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Контакты</p>
     </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/filters.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ header {
     padding: 20px;
     background-color: #1F2A44;
     color: white;
-    margin: 0; 
+    margin: 0;
 }
 
 .logo img {
@@ -23,7 +23,8 @@ header {
 }
 
 h1 {
-    margin: 10px 0 0; 
+    margin: 10px 0 0;
+    font-size: 24px;
 }
 
 .subtitle {
@@ -33,8 +34,8 @@ h1 {
 }
 
 nav {
-    padding: 0 0 15px;
-    margin: 0; 
+    padding: 15px 0;
+    margin: 0;
 }
 
 nav ul {
@@ -43,7 +44,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #4A4A4A;
-    margin: 0; 
+    margin: 0;
 }
 
 nav ul li {
@@ -60,11 +61,15 @@ nav ul li a:hover {
     color: #007BFF;
 }
 
+nav ul li a.active {
+    color: #00FF00;
+}
+
 main {
     flex: 1 0 auto;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px 20px; 
+    padding: 0 20px 20px;
 }
 
 .intro {
@@ -89,20 +94,7 @@ main {
 }
 
 .text p {
-    margin: 0 0 10px;
-}
-
-.resume-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.resume-btn:hover {
-    background-color: #0056b3;
+    margin: 0 0 5px; /* Уменьшенный отступ для лучшего отображения строк */
 }
 
 .about {
@@ -166,21 +158,37 @@ main {
 .project-grid {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .project-card {
-    width: 100px;
-    height: 100px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
+    flex: 1 1 calc(33.33% - 10px); /* 3 карточки в ряд с учётом gap */
+    min-width: 150px; /* Минимальная ширина для адаптивности */
+    background-color: white;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     text-align: center;
-    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-content h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.project-content p {
+    margin: 0;
+    color: #666;
+    font-size: 12px;
 }
 
 .filter {
@@ -200,6 +208,11 @@ main {
     background-color: #ddd;
 }
 
+.filter button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
 .diary {
     margin-top: 20px;
 }
@@ -215,6 +228,14 @@ main {
 
 .progress-list li {
     margin: 5px 0;
+}
+
+.progress-list .status {
+    color: #28a745;
+}
+
+.progress-list .status.X {
+    color: #dc3545;
 }
 
 .progress-list button {
@@ -283,6 +304,46 @@ footer {
     flex-shrink: 0;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 300px;
+}
+
+.modal-content input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.modal-content button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
 @media (max-width: 600px) {
     .intro {
         flex-direction: column;
@@ -293,6 +354,7 @@ footer {
         align-items: center;
     }
     .project-card {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        flex: 1 1 100%;
     }
 }

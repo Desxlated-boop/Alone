@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Имя Студента - Контакты</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
 </head>
 <body>
     <header>
@@ -14,31 +15,33 @@
     </header>
     <nav>
         <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-            <li><a href="diary.html">Дневник</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="../index.html">Главная</a></li>
+            <li><img src="../images/icons/projects.ico" alt="Иконка" style="margin-top: -2px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="projects.html">Проекты</a></li>
+            <li><img src="../images/icons/diary.ico" alt="Иконка" style="margin-top: -3px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="diary.html">Дневник</a></li>
+            <li><img src="../images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
     <main>
         <section class="contacts">
-            <h2>Свяжитесь со мной</h2>
-            <form>
-                <label>Имя:<input type="text" name="name"></label>
-                <label>Email:<input type="email" name="email"></label>
-                <label>Сообщение:<textarea name="message"></textarea></label>
+            <h2><img src="../images/icons/contact.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Свяжитесь со мной</b></h2>
+            <form id="contact-form">
+                <label>Ваше Имя:<input type="text" name="name" required></label>
+                <label>Ваш Email:<input type="email" name="email" required></label>
+                <label>Ваше Сообщение:<textarea name="message" required></textarea></label>
                 <button type="submit">Отправить сообщение</button>
             </form>
             <div class="contact-info">
-                <p>Контакты:</p>
-                <p>📧 student@edu.ru</p>
-                <p>📱 GitHub: username</p>
-                <p>📍 Город, Страна</p>
+                <p><strong>Информация</strong></p>
+                <p><img src="../images/icons/mail.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>Почта:</b> halturshik44@gmail.com</p>
+                <p><img src="../images/icons/git.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>GitHub:</b> Desxlated-boop</p>
+                <p><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>Адрес:</b> Город, Страна</p>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Контакты</p>
     </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/form-validation.js"></script>
 </body>
 </html>

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Имя Студента - Дневник</title>
+    <title>Дневник</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
 </head>
 <body>
     <header>
@@ -14,30 +15,32 @@
     </header>
     <nav>
         <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="projects.html">Проекты</a></li>
-            <li><a href="diary.html">Дневник</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="../index.html">Главная</a></li>
+            <li><img src="../images/icons/projects.ico" alt="Иконка" style="margin-top: -2px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="projects.html">Проекты</a></li>
+            <li><img src="../images/icons/diary.ico" alt="Иконка" style="margin-top: -3px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="diary.html">Дневник</a></li>
+            <li><img src="../images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
     <main>
         <section class="diary">
-            <h2>Мой учебный прогресс</h2>
+            <h2><img src="../images/icons/stonks.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Мой учебный прогресс</b></h2>
             <ul class="progress-list">
-                <li>15 дек - Верстка макета сайта ✓</li>
-                <li>10 дек - JavaScript основы ✓</li>
-                <li>05 дек - Работа с формами Х</li>
-                <li>01 дек - Адаптивный дизайн Х</li>
+                <li>15 дек - Верстка макета сайта <span class="status">✓</span></li>
+                <li>10 дек - JavaScript основы <span class="status">✓</span></li>
+                <li>05 дек - Работа с формами <span class="status">Х</span></li>
+                <li>01 дек - Адаптивный дизайн <span class="status">Х</span></li>
             </ul>
-            <h2>Текущие курсы</h2>
+            <h2><img src="../images/icons/study.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Текущие курсы</b></h2>
             <div class="skill-bar"><span>Веб-разработка</span><div class="progress"><div class="progress-fill" style="width: 90%;"></div></div><span>90%</span></div>
             <div class="skill-bar"><span>JavaScript</span><div class="progress"><div class="progress-fill" style="width: 70%;"></div></div><span>70%</span></div>
             <div class="skill-bar"><span>React</span><div class="progress"><div class="progress-fill" style="width: 50%;"></div></div><span>50%</span></div>
-            <button>Добавить запись</button>
+            <button class="add-entry">Добавить запись</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Контакты</p>
     </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/modal.js"></script>
 </body>
 </html>
