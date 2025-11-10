@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../images/logo.jpg" alt="Логотип"></div>
+        <h1>Валерий Альбредович</h1>
+        <p class="subtitle">Студент-разработчик</p>
+    </header>
+    <nav>
+        <ul>
+            <li><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="../index.html">Главная</a></li>
+            <li><img src="../images/icons/projects.ico" alt="Иконка" style="margin-top: -2px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="projects.html">Проекты</a></li>
+            <li><img src="../images/icons/diary.ico" alt="Иконка" style="margin-top: -3px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="diary.html">Дневник</a></li>
+            <li><img src="../images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contacts">
+            <h2><img src="../images/icons/contact.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Свяжитесь со мной</b></h2>
+            <form id="contact-form">
+                <label>Ваше Имя:<input type="text" name="name" required></label>
+                <label>Ваш Email:<input type="email" name="email" required></label>
+                <label>Ваше Сообщение:<textarea name="message" required></textarea></label>
+                <button type="submit">Отправить сообщение</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Информация</strong></p>
+                <p><img src="../images/icons/mail.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>Почта:</b> halturshik44@gmail.com</p>
+                <p><img src="../images/icons/git.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>GitHub:</b> Desxlated-boop</p>
+                <p><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>Адрес:</b> США, штат Сан-Андреас, Лос-Сантос, р-н Стрейнджерс-Таун, ул. Карсон-Авеню, дом 1211</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Контакты</p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+</body>
+</html>
