@@ -8,8 +8,15 @@
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
     <header>
-        <div class="logo"><img src="images/logo.jpg" alt="Логотип"></div>
+        <div class="logo">
+            <picture>
+                <source srcset="images/logo.avif" type="image/avif">
+                <source srcset="images/logo.webp" type="image/webp">
+                <img src="images/logo.jpg" width="100" height="100" alt="Логотип" loading="lazy">
+            </picture>
+        </div>
         <h1>Валерий Альбредович</h1>
         <p class="subtitle">Студент-разработчик</p>
     </header>
@@ -21,9 +28,15 @@
             <li><img src="images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="pages/contacts.html">Контакты</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main-content">
         <section class="intro">
-            <div class="photo"><img src="images/photo.jpg" alt="Фото студента"></div>
+            <div class="photo">
+            <picture>
+                <source srcset="images/photo.avif" type="image/avif">
+                <source srcset="images/photo.webp" type="image/webp">
+                <img src="images/photo.jpg" width="150" height="200" alt="Фото студента" loading="lazy">
+            </picture>
+            </div>
             <div class="text">
                 <p>Навыки: Веб-разработка: HTML/CSS, JavaScript</p>
                 <p>Факультет: Информационные технологии</p>
