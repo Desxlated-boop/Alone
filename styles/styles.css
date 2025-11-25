@@ -26,6 +26,8 @@ body {
 }
 
 header {
+    top: 0;
+    z-index: 1000;
     text-align: center;
     padding: 20px;
     background-color: #1F2A44;
@@ -50,6 +52,12 @@ h1 {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #4A4A4A;
+    padding-top: env(safe-area-inset-top, 10px);
+    isolation: isolate;
     padding: 15px 0;
     margin: 0;
 }
