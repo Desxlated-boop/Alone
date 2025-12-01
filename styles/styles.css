@@ -535,3 +535,71 @@ nav a:focus-visible {
         }
     }
 }
+
+/* === Фикс мобильных проблем: nav, таблица, белый фон === */
+html, body {
+    overflow-x: hidden;      
+    width: 100%;             
+    margin: 0;               
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+nav {
+    width: 100%;             
+    margin: 0;               
+    padding: 15px 0;         
+    box-sizing: border-box;
+    overflow: hidden;       
+}
+
+nav ul {
+    width: 100%;             
+    margin: 0 auto;          
+    padding: 0;              
+    justify-content: center; 
+    flex-wrap: wrap;         
+}
+
+/* Таблица: фикс переполнения и белого фона */
+.table-wrapper {
+    width: 100%;             
+    overflow-x: auto;        
+    margin: 20px 0;          
+    padding: 0;              
+    -webkit-overflow-scrolling: touch; 
+    background-color: #F9FAFB; 
+}
+
+.adaptive-table {
+    width: 100%;             
+    min-width: 320px;        
+    border-collapse: collapse;
+    background: white;       
+    margin: 0;               
+}
+
+@media (max-width: 480px) {
+    .adaptive-table {
+        font-size: 14px;     
+        min-width: 300px;    
+    }
+    .adaptive-table th,
+    .adaptive-table td {
+        padding: 8px 4px;    
+    }
+    
+    main {
+        padding: 0 10px;     
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .content-box,
+    .projects,
+    .diary {
+        width: 100%;         
+        margin: 0 auto;
+        padding: 10px;       
+    }
+}
