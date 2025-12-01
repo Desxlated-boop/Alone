@@ -35,6 +35,15 @@ header {
     margin: 0;
 }
 
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #E0F7FA;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
 .logo img {
     max-width: 100px;
     height: auto;
@@ -181,11 +190,10 @@ main {
 }
 
 .project-grid {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin-top: 10px;
-    flex-wrap: wrap;
 }
 
 .project-card {
@@ -446,6 +454,20 @@ nav a:focus-visible {
   object-fit: cover;
 }
 
+.content-box {
+  container-type: inline-size;
+  container-name: content-box;
+}
+
+@container content-box (max-width: 600px) {
+  .text p {
+    font-size: 14px;
+  }
+  .skill-bar {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px) {
     .intro {
         flex-direction: column;
@@ -458,5 +480,58 @@ nav a:focus-visible {
     .project-card {
         margin-bottom: 15px;
         flex: 1 1 100%;
+    }
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin: 20px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.adaptive-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    background: white;
+}
+
+.adaptive-table th,
+.adaptive-table td {
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.adaptive-table th {
+    background-color: #1F2A44;
+    color: white;
+}
+
+.adaptive-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.adaptive-table .status {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* мелкие экраны */
+@media (max-width: 480px) {
+    .adaptive-table {
+        font-size: 14px;
+    }
+    .adaptive-table th,
+    .adaptive-table td {
+        padding: 8px 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    @container content-box (min-width: 400px) {
+        .project-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }

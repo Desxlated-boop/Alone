@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", viewport-fit="cover">
     <title>Портфолио</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
@@ -12,9 +12,12 @@
     <header>
         <div class="logo">
             <picture>
+                <source media="(min-width: 1000px)" srcset="images/logo-tablet.jpg">
+                <source media="(max-width: 600px)" srcset="images/logo-mobile.jpg">
                 <source srcset="images/logo.avif" type="image/avif">
                 <source srcset="images/logo.webp" type="image/webp">
-                <img src="images/logo.jpg" width="100" height="100" alt="Логотип" loading="lazy">
+                <img src="images/logo.jpg" width="100" height="100" alt="Логотип" loading="lazy"
+                    sizes="(max-width: 600px) 80px, 100px">
             </picture>
         </div>
         <h1>Валерий Альбредович</h1>
@@ -28,13 +31,22 @@
             <li><img src="images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="pages/contacts.html">Контакты</a></li>
         </ul>
     </nav>
+    
+    <section class="hero">
+        <h2>Добро пожаловать в мое портфолио</h2>
+        <p>Здесь вы найдете мои проекты и навыки в веб-разработке.</p>
+    </section>
+
     <main id="main-content">
         <section class="intro">
             <div class="photo">
             <picture>
+                <source media="(orientation: landscape)" srcset="images/photo-landscape.jpg">
+                <source media="(orientation: portrait)" srcset="images/photo-portrait.jpg">
                 <source srcset="images/photo.avif" type="image/avif">
                 <source srcset="images/photo.webp" type="image/webp">
-                <img src="images/photo.jpg" width="150" height="200" alt="Фото студента" loading="lazy">
+                <img src="images/photo.jpg" width="150" height="200" alt="Фото студента" loading="lazy"
+                    srcset="images/photo.jpg 1x, images/photo.jpg 2x" sizes="(max-width: 768px) 100vw, 150px">
             </picture>
             </div>
             <div class="text">
