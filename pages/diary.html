@@ -25,17 +25,43 @@
     </header>
     <nav>
         <ul>
-            <li><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="../index.html">Главная</a></li>
-            <li><img src="../images/icons/projects.ico" alt="Иконка" style="margin-top: -2px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="projects.html">Проекты</a></li>
-            <li><img src="../images/icons/diary.ico" alt="Иконка" style="margin-top: -3px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="diary.html">Дневник</a></li>
-            <li><img src="../images/icons/communication.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><a href="contacts.html">Контакты</a></li>
+            <li>
+                <img src="../images/icons/home.ico"
+                    alt="" 
+                    aria-hidden="true"
+                    style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                <a href="../index.html">Главная</a>
+            </li>
+            <li>
+                <img src="../images/icons/projects.ico"
+                    alt=""
+                    aria-hidden="true"
+                    style="margin-top: -2px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                <a href="projects.html">Проекты</a>
+            </li>
+            <li>
+                <img src="../images/icons/diary.ico"
+                    alt=""
+                    aria-hidden="true"
+                    style="margin-top: -3px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                <a href="diary.html">Дневник</a>
+            </li>
+            <li>
+                <img src="../images/icons/communication.ico"
+                alt=""
+                style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+            <a href="contacts.html">Контакты</a>
+            </li>
         </ul>
     </nav>
     <main id="main-content">
         <section class="diary">
-            <h2><img src="../images/icons/stonks.ico" alt="Иконка"
-                    style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Мой учебный
-                    прогресс</b></h2>
+            <h2><img src="../images/icons/stonks.ico"
+                    alt=""
+                    aria-hidden="true"
+                    style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;">
+                <b>Мой учебный прогресс</b>
+            </h2>
             
             <div class="table-wrapper">
                 <table class="adaptive-table">
@@ -71,10 +97,45 @@
                 </table>
             </div>
 
-            <h2><img src="../images/icons/study.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Текущие курсы</b></h2>
-            <div class="skill-bar"><span>Веб-разработка</span><div class="progress"><div class="progress-fill" style="width: 90%;"></div></div><span>90%</span></div>
-            <div class="skill-bar"><span>JavaScript</span><div class="progress"><div class="progress-fill" style="width: 70%;"></div></div><span>70%</span></div>
-            <div class="skill-bar"><span>React</span><div class="progress"><div class="progress-fill" style="width: 50%;"></div></div><span>50%</span></div>
+            <h2>
+                <img src="../images/icons/study.ico"
+                    alt=""
+                    aria-hidden="true"
+                    style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;">
+                <b>Текущие курсы</b>
+            </h2>
+            <div class="skill-bar"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Веб-разработка 90%">
+                <span>Веб-разработка</span>
+                <div class="progress"><div class="progress-fill" style="width: 90%;"></div></div>
+                <span>90%</span>
+            </div>
+
+            <div class="skill-bar"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="JavaScript 70%">
+                <span>JavaScript</span>
+                <div class="progress"><div class="progress-fill" style="width: 70%;"></div></div>
+                <span>70%</span>
+            </div>
+
+            <div class="skill-bar"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="React 50%">
+                <span>React</span>
+                <div class="progress"><div class="progress-fill" style="width: 50%;"></div></div>
+                <span>50%</span>
+            </div>
             <button class="add-entry">Добавить запись</button>
         </section>
     </main>
