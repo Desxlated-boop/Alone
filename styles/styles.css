@@ -603,3 +603,52 @@ nav ul {
         padding: 10px;       
     }
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-errors {
+    margin-top: 10px;
+    color: #d00;
+    min-height: 1.5em;
+}
+
+#contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    margin-top: 20px auto;
+    display: block;
+}
+
+/* скрывает текст визуально */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

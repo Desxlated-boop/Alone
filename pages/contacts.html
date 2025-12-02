@@ -57,18 +57,41 @@
     </nav>
     <main id="main-content">
         <section class="contacts">
-            <h2><img src="../images/icons/contact.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;"> <b>Свяжитесь со мной</b></h2>
-            <form id="contact-form">
-                <label>Ваше Имя:<input type="text" name="name" required></label>
-                <label>Ваш Email:<input type="email" name="email" required></label>
-                <label>Ваше Сообщение:<textarea name="message" required></textarea></label>
+            <h2>
+                <img src="../images/icons/contact.ico" alt="" aria-hidden="true"
+                    style="margin-top: -4px; vertical-align: middle; width: 24px; height: 24px; margin-right: 5px;">
+                <b>Свяжитесь со мной</b>
+            </h2>
+            <form id="contact-form" novalidate>
+                <label for="user-name">Ваше Имя:</label>
+                <input type="text" id="user-name" name="name" required autocomplete="name" aria-required="true">
+            
+                <label for="user-email">Ваш Email:</label>
+                <input type="email" id="user-email" name="email" required autocomplete="email" aria-required="true">
+            
+                <label for="user-message">Ваше Сообщение:</label>
+                <textarea id="user-message" name="message" rows="5" required autocomplete="off" aria-required="true"></textarea>
+            
                 <button type="submit">Отправить сообщение</button>
+                <div aria-live="polite" class="form-errors" id="form-errors"></div>
             </form>
             <div class="contact-info">
                 <p><strong>Информация</strong></p>
-                <p><img src="../images/icons/mail.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>Почта:</b> halturshik44@gmail.com</p>
-                <p><img src="../images/icons/git.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>GitHub:</b> Desxlated-boop</p>
-                <p><img src="../images/icons/home.ico" alt="Иконка" style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;"><b>Адрес:</b> США, штат Сан-Андреас, Лос-Сантос, р-н Стрейнджерс-Таун, ул. Карсон-Авеню, дом 1211</p>
+                <p>
+                    <img src="../images/icons/mail.ico" alt="" aria-hidden="true"
+                        style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                    <b>Почта:</b> halturshik44@gmail.com
+                </p>
+                <p>
+                    <img src="../images/icons/git.ico" alt="" aria-hidden="true"
+                        style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                    <b>GitHub:</b> Desxlated-boop
+                </p>
+                <p>
+                    <img src="../images/icons/home.ico" alt="" aria-hidden="true"
+                        style="margin-top: -4px; vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                    <b>Адрес:</b> США, штат Сан-Андреас, Лос-Сантос, р-н Стрейнджерс-Таун, ул. Карсон-Авеню, дом 1211
+                </p>
             </div>
         </section>
     </main>
